@@ -1,0 +1,30 @@
+Eccube\Entity\UserRegisterMetas:
+    type: entity
+    table: user_register_metas
+    repositoryClass: Eccube\Repository\UserRegisterMetasRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: id
+            generator:
+                strategy: AUTO
+    fields:
+        customer_id:
+            type: integer
+            nullable: true
+        user_ip:
+            type: string
+            nullable: true
+        user_agent:
+            type: string
+            nullable: true
+        status:
+            type: integer
+            nullable: true
+        created_at:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }
